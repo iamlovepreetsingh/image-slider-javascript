@@ -1,0 +1,76 @@
+*{
+    font-family: 'poppins';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    transition: 0.3s;
+}
+
+.slider__container{
+    position: relative;
+    width: 900px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slider__pagination{
+    position: absolute;
+}
+
+
+.buttons button{
+    position: absolute;
+    width: 25px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+}
+
+.prev__btn{
+    top: 50%;
+}
+
+.next__btn{
+    top: 50%;
+    right: 0;
+}
+
+
+.slider__pagination{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    column-gap: 8px;
+}
+
+.pagination__btn{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(201, 240, 252);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.pagination__btn:hover{
+    background: rgb(210, 217, 250);
+}
